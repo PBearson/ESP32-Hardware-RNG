@@ -11,6 +11,6 @@ void app_main(void)
 		rng = (char*)0x3ff75144;
 		for(int i = 0; i < 32; i++) printf("%c", *rng+i);
 		printf("\n");
-        	vTaskDelay(300 / portTICK_PERIOD_MS);
+        	vTaskDelay(1000 / portTICK_PERIOD_MS);
 	}
 }
